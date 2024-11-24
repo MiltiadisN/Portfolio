@@ -1,0 +1,311 @@
+<!-- Navigation Section -->
+<nav class="d-flex align-items-center justify-content-between bg-black sticky-top">
+  <a class="logo d-flex" href="#">
+    <span class="d-flex align-items-center justify-content-center"><img src="../assets/images/logo.png"
+                                                                        alt="Logo"></span>
+  </a>
+  <button class="custom-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header" data-bs-theme="dark">
+      <button type="button" class="btn-close offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-around">
+      <ul class="nav flex-column text-start px-5">
+        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#carousel">Projects</a></li>
+        <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#contact">Contact me</a></li>
+      </ul>
+      <div class="offcanvas-footer text-start px-5">
+        <p >&copy; 2024 Ntinos Miltiadis.</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- About Section -->
+<section class="bg-black py-5">
+  <div class="container d-flex flex-column flex-sm-row align-items-center align-items-sm-start text-center text-sm-start pt-4">
+    <div class="area-heading mb-3">
+      <h1 class=""> Hi I’m <span class="d-block">Ntinos Miltiadis</span></h1>
+      <p class="lead mt-3 mb-3">
+        Welcome! I’m a Fullstack Developer with a Bachelor’s degree in Applied Informatics, passionate about crafting dynamic and responsive web applications. 
+        My expertise includes Angular, JavaScript, HTML, CSS, and backend technologies like Spring Boot and Java. I’ve also utilized Docker for containerized applications, 
+        hosted websites on Azure, and integrated AWS for secure login features.
+      </p>
+      <p>My portfolio showcases a diverse range of projects, including business and personal endeavors, spanning both frontend and backend development. 
+        These projects are hosted on VPS and cloud platforms.
+        My personal projects are live-deployed and open-source, complete with live links and GitHub repositories.</p>
+      <p class="pb-4">
+        Explore my projects below and journey as I continue to innovate and grow in the world of web development!</p>
+      <a href="#carousel" class="link-underline-opacity-0">Projects</a>
+    </div>
+    <div class="vertical-line mx-5 d-none d-xl-block"></div>
+    <div class="tools d-none d-md-block">
+      <h1><span>Skills & Technologies</span></h1>
+      <div class="banner-images pt-4">
+        <img src="../assets/images/tools/html5.svg" alt="Html">
+        <img src="../assets/images/tools/css.svg" alt="Css">
+        <img src="../assets/images/tools/javascript.svg" alt="Javascript">
+        <img src="../assets/images/tools/spring.svg" alt="Spring Boot">
+        <img src="../assets/images/tools/bootstrap.svg" alt="Bootstrap">
+        <img src="../assets/images/tools/angular-icon.svg" alt="Angular">
+        <img src="../assets/images/tools/mysql.jpg" alt="MySql">
+        <img src="../assets/images/tools/laravel.svg" alt="Laravel">
+        <img src="../assets/images/tools/vue.svg" alt="Vue">
+        <img src="../assets/images/tools/intelliJ.svg" alt="IntelliJ">
+        <img src="../assets/images/tools/visual-studio-code.svg" alt="Visual Studio Code">
+        <img src="../assets/images/tools/docker.svg" alt="Docker">
+        <img src="../assets/images/tools/azure.svg" alt="Azure">
+        <img src="../assets/images/tools/amazon-web-services-2.svg" alt="AWS">
+        <img src="../assets/images/tools/firebase.svg" alt="Firebase Google">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects-Carousel Section -->
+<section class="bg-black" id="carousel">
+  <div id="projectCarousel" class="carousel slide pt-5 pb-5" data-bs-ride="carousel">
+    <div class="carousel-inner mb-5">
+      <div class="carousel-item active">
+        <div class="row g-3 area-carousel">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/spring-angular.png" alt="Project Image"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/restaurant.png" alt="Restaurant Project"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-start">
+            <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+              <div class="text-content px-3 py-2">
+                <h3>Employee & Task Management Application</h3>
+                <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                  <img src="../assets/images/tools/angular-icon.svg" alt="Angular" >
+                  <img src="../assets/images/tools/spring.svg" alt="Spring Boot">
+                  <img src="../assets/images/tools/mysql.jpg" alt="MySql">
+                  <img src="../assets/images/tools/docker.svg" alt="Docker">
+                </div>
+                <p class="mt-3">The Employee & Task Management Application is a web-based platform for managing employees and tasks, built with Angular and Spring Boot. It features a responsive UI using Bootstrap, Angular Material, and custom HTML/CSS, and is deployed via Docker on a VPS server with MySQL for secure data storage. The app includes a secure Spring Security login system, allowing managers to log in, view, update, and assign tasks to employees. This project demonstrates full-stack development expertise with seamless CRUD operations for managing employees and tasks.
+                  </p>
+                <a href="https://github.com/MiltiadisN/SpringBoot-Angular" target="_blank" class="btn btn-outline-primary mx-2">GitHub</a>
+                <a href="https://www.employee-task.miltiadisntinos.com/" target="_blank" class="btn btn-outline-success">Live</a>
+              </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+              <div class="text-content px-3 py-2">
+                <h3>Greek Restaurant Website</h3>
+                <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                  <img src="../assets/images/tools/bootstrap.svg" alt="Bootstrap" >
+                  <img src="../assets/images/tools/mysql.jpg" alt="MySql">
+                  <img src="../assets/images/tools/laravel.svg" alt="Laravel">
+                  <img src="../assets/images/tools/vue.svg" alt="Vue">
+                </div>
+                <p class="mt-3">This project showcases a modern and responsive website built for a Greek restaurant located in Altenfurt. This project highlights expertise in full-stack web development, with a focus on responsive design and robust backend systems.
+                  The backend, developed using Laravel, empowers the restaurant manager to independently manage the menu with features to add, delete, or update items effortlessly. 
+                  Hosting on a VPS server ensures reliable performance and smooth functionality for both customers and administrators.
+                  </p>
+                <a href="https://www.griechisches-restaurant-nuernberg.de/de" target="_blank" class="btn btn-outline-success">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="carousel-item">
+        <div class="row g-3 area-carousel">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/aws-angular.png" alt="Project Image"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/weather.png" alt="Project Image"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-start">
+            <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+              <div class="text-content px-3 py-2">
+                <h3>AWS-Integrated Authentication App</h3>
+                <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                  <img src="../assets/images/tools/bootstrap.svg" alt="Bootstrap" >
+                  <img src="../assets/images/tools/angular-icon.svg" alt="Angular">
+                  <img src="../assets/images/tools/amazon-web-services-2.svg" alt="AWS">
+                  <img src="../assets/images/tools/firebase.svg" alt="Firebase Google">
+                </div>
+                <p class="mt-3">This project demonstrates an Angular application that integrates AWS services such as Amazon Cognito, Lambda, and API Gateway to provide user authentication and authorization features. Users can register, log in, reset passwords, and manage their sessions using Cognito. The UI is built with Bootstrap, and the development and hosting were done on Firebase.</p>
+                <a href="https://github.com/MiltiadisN/AWS-Angular" target="_blank" class="btn btn-outline-primary mx-2">GitHub</a>
+                <a href="https://order.miltiadisntinos.com" target="_blank" class="btn btn-outline-success">Live</a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+              <div class="text-content px-3 py-2">
+                <h3>Weather App</h3>
+                <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                  <img src="../assets/images/tools/bootstrap.svg" alt="Bootstrap" >
+                  <img src="../assets/images/tools/angular-icon.svg" alt="Angular">
+                  <img src="../assets/images/tools/azure.svg" alt="Azure">
+                </div>
+                <p class="mt-3">This project is a simple weather application built with Angular, allowing users to search for weather details such as temperature, humidity, and wind speed for any city. It uses data from the OpenWeatherMap API and requires an API key to function. The UI enables users to input a city and view weather information quickly. The development and deployment were done on Azure.</p>
+                <a href="https://github.com/MiltiadisN/Weather-Angular" target="_blank" class="btn btn-outline-primary mx-2">GitHub</a>
+                <a href="https://www.app-weather.miltiadisntinos.com/" target="_blank" class="btn btn-outline-success">Live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row g-3 area-carousel">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/notes.png" alt="Project Image"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="../assets/images/projects_images/Portfolio.png" alt="Project Image"
+                 class="img-fluid w-100 rounded-image" style="object-fit: cover; max-height: 500px;">
+          </div>
+          <div class="col-12 d-flex flex-column flex-md-row justify-content-center align-items-center text-center text-md-start">
+            <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+              <div class="text-content px-3 py-2">
+                <h3>Note-Swing</h3>
+                <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                  <img src="../assets/images/tools/java.svg" alt="Java">
+                  <img src="../assets/images/tools/mysql.jpg" alt="MySql">
+                </div>
+                <p class="mt-3">This project is a simple Java application with a graphical user interface (GUI) built using the Swing library. It allows users to manage notes by adding, retrieving, editing, and deleting them. The application interacts with a MySQL database for note storage, providing a smooth interface for performing CRUD operations on notes.</p>
+                <a href="https://github.com/MiltiadisN/Note-Java" target="_blank" class="btn btn-outline-primary mx-2">GitHub</a>
+                <a href="https://raw.githubusercontent.com/MiltiadisN/Note-Java/master/Note-Java-master.jar" target="_blank" class="btn btn-outline-success">Jar</a>
+              </div>
+            </div>
+              <div class="col-12 col-md-6 col-lg-6 project d-flex align-items-center">
+                <div class="text-content px-3 py-2">
+                  <h3>Portfolio</h3>
+                  <div class="carousel-images d-flex flex-wrap justify-content-md-start justify-content-center">
+                    <img src="../assets/images/tools/bootstrap.svg" alt="Bootstrap">
+                    <img src="../assets/images/tools/angular-icon.svg" alt="Angular">
+                    <img src="../assets/images/tools/firebase.svg" alt="Firebase Google">
+                  </div>
+                  <p class="mt-3">
+                    I built a portfolio using Angular and Bootstrap for a clean and responsive design. The contact form is powered by EmailJS for seamless email submissions. The project is developed and hosted on Firebase for efficient and scalable deployment.</p>
+                  <a href="" target="_blank" class="btn btn-outline-primary mx-2">GitHub</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-none rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-none rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact-sec" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 text-center">
+        <div>
+          <img src="../assets/images/user-image.jpg" class="user-img rounded-circle" alt="">
+        </div>
+        <h4 class="user-name">Ntinos Miltiadis</h4>
+        <p class="user-designation">miltiadis.ntinos&#64;gmail.com
+        </p>
+      </div>
+      <div class="col-12 col-md-9">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row contact-form">
+          <div class="col-md-6 col-md-6">
+          <div class="form-group">
+            <input
+              type="text"
+              formControlName="name"
+              placeholder="Your Name"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              formControlName="email"
+              placeholder="Your Email"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              formControlName="subject"
+              placeholder="Subject"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <textarea
+              formControlName="message"
+              rows="6"
+              placeholder="Message"
+              class="form-control"
+            ></textarea>
+          </div>   
+          <button
+            type="submit"
+            class="btn btn-medium btn-rounded btn-black rounded-pill w-100 contact_btn main-font py-3"
+          >
+            Send Message
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="notification" class="notification" [ngClass]="{'show': showNotification}">
+    <span>{{ notificationMessage }}</span>
+    <button (click)="closeNotification()">✖</button>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="bg-black text-white footer">
+  <footer class="footer py-4">
+    <div class="container">
+      <!-- Copyright Section -->
+      <div class="text-center py-3 mt-4 border-top border-secondary">
+        <p class="mb-0">&copy; 2024 Ntinos Miltiadis. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Scroll On Top -->
+<button *ngIf="showScroll" (click)="scrollToTop()" class="btn btn-primary scroll-top-btn" style="position: fixed; bottom: 20px; right: 20px;">
+  ↑
+</button>

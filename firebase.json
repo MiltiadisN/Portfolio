@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "development-projects-a4d9d",
+    "public": "dist/portfolio/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
